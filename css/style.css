@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../img/jscount.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    font-family: 'Bungee Shade';
+
+    height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 0;
+    overflow: hidden;
+}
+body::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: -1;
+}
+h1{
+    font-size: 60px;
+}
+.year{
+    font-size: 200px;
+    opacity: 0.2;
+
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+
+    transform: translate(-50%);
+
+    z-index: -1;
+
+}
+.countdown{
+    /*display: flex;*/
+    display: none;
+    transform: scale(2);
+}
+.time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 15px;
+
+    /*width: 80px;*/
+    /*height: 70px;*/
+    /*background-color: #34495E;*/
+}
+
+.time h2{
+    margin: 0 5px;
+}
+@media (max-width: 700px) {
+    h1{
+        font-size: 30px;
+    }
+    .time {
+        margin: 2px;
+
+        width: 50px;
+        height: 40px;
+    }
+    .time h2{
+        font-size: 9px;
+        margin: 0px;
+
+    }
+    .time small{
+        font-size: 5px;
+    }
+    
+}
+h1:hover,.time:hover {
+    text-shadow: 0 0 10px #3498DB,
+    0 0 20px #3498DB,
+    0 0 30px #3498DB,
+    0 0 40px #2980B9,
+    0 0 70px #2980B9,
+    0 0 80px #2980B9,
+    0 0 100px #2980B9,
+    0 0 150px #2980B9;
+}
+/*h2:hover,small:hover {*/
+/*    text-shadow: 0 0 10px #3498DB,*/
+/*    0 0 20px #3498DB,*/
+/*    0 0 30px #3498DB,*/
+/*    0 0 40px #2980B9,*/
+/*    0 0 70px #2980B9,*/
+/*    0 0 80px #2980B9,*/
+/*    0 0 100px #2980B9,*/
+/*    0 0 150px #2980B9;*/
+/*}*/
